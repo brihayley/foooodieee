@@ -40,8 +40,8 @@ if(!sbi_js_exists){
                     var sbiWindowWidth = jQuery(window).width();
                     if( sbiWindowWidth < 640 ){
                         //Need this for mobile so that image res is right on mobile, as the number of cols isn't always accurate on mobile as they are changed using CSS
-                        if( feedWidth < 640 && $self.is('.sbi_col_3, .sbi_col_4, .sbi_col_5, .sbi_col_6') ) colWidth = 300; //Use medium images
-                        if( feedWidth < 640 && $self.is('.sbi_col_7, .sbi_col_8, .sbi_col_9, .sbi_col_10') ) colWidth = 100; //Use thumbnail images
+                        if( feedWidth < 640 && $self.is('.sbi_col_3, .sbi_col_4, .sbi_col_5') ) colWidth = 300; //Use medium images
+                        if( feedWidth < 640 && $self.is('.sbi_col_7, .sbi_col_8, .sbi_col_9, .sbi_col_10, .sbi_col_6') ) colWidth = 100; //Use thumbnail images
                         if( (feedWidth > 320 && feedWidth < 480) && sbiWindowWidth < 480 ) colWidth = 480; //Use full size images
                         if( feedWidth < 320 && sbiWindowWidth < 480 ) colWidth = 300; //Use medium size images
                     }
@@ -295,7 +295,7 @@ if(!sbi_js_exists){
 
             }); //End User ID array loop
 
-        
+
         });
 
     }

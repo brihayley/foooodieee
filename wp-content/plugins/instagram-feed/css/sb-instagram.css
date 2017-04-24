@@ -394,12 +394,12 @@
 
 /* Media queries */
 @media all and (max-width: 640px){
-  /* Make 3-6 cols into 2 col */
+  /* Make 3-6 cols into 4 col */
   #sb_instagram.sbi_col_3 #sbi_images .sbi_item,
   #sb_instagram.sbi_col_4 #sbi_images .sbi_item,
   #sb_instagram.sbi_col_5 #sbi_images .sbi_item,
   #sb_instagram.sbi_col_6 #sbi_images .sbi_item{
-    width: 50%;
+    width: 25%;
   }
   /* Make 7-10 cols into 4 col */
   #sb_instagram.sbi_col_7 #sbi_images .sbi_item,
