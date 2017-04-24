@@ -52,6 +52,15 @@ function skillcrushstarter_widgets_init() {
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
 	) );
+	register_sidebar( array(
+		'name'          => __( 'Sidebar 2', 'skillcrushstarter' ),
+		'id'            => 'sidebar-2',
+		'description'   => __( 'Add widgets here to appear in your sidebar.', 'skillcrushstarter' ),
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</li></ul>',
+		'before_title'  => '<h3 class="widget-title">',
+		'after_title'   => '</h3>',
+	) );
 }
 add_action( 'widgets_init', 'skillcrushstarter_widgets_init' );
 

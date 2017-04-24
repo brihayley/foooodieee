@@ -9,7 +9,7 @@
 
 get_header(); ?>
 
-<section class="default-page">		
+<section class="default-page">
 	<div class="main-content">
 		<?php while ( have_posts() ) : the_post(); ?>
 			<h2 class="entry-title"><?php the_title(); ?></h2>
@@ -18,7 +18,7 @@ get_header(); ?>
 			</article>
 		<?php endwhile; ?>
 	</div>
-	
+
 	<?php get_sidebar(); ?>
 </section>
 

@@ -33,6 +33,9 @@
 			<?php wp_nav_menu(array('theme_location' => 'primary-menu')); ?>
 		</nav>
 	</header>
+	<div id="sidebar-secondary" class="sidebar-2">
+		<?php dynamic_sidebar( 'sidebar-2' ); ?>
+	</div>
 
 	<div id="page" class="hfeed site">
 		<div id="main" class="site-main">

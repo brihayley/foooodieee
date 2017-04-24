@@ -13,8 +13,8 @@
 
 		</div><!-- #main -->
 	</div><!-- #page -->
-
-	<?php wp_footer(); ?>
-	
+	<section class="footer">
+	</section>
+		<?php wp_footer(); ?>
 </body>
 </html>
