@@ -14,6 +14,9 @@
 		</div><!-- #main -->
 	</div><!-- #page -->
 	<section class="footer">
+		<div class="copywrite">
+			<h2>&copy; Theme developed by <a href="http://briannahayley.com" target="_blank">Brianna Hayley</a></h2>
+		</div>
 	</section>
 		<?php wp_footer(); ?>
 </body>
