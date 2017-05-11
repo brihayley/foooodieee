@@ -24,18 +24,17 @@
 
 <body <?php body_class(); ?>>
 	<header class="page-header container">
-		<a href="<?php echo site_url(); ?>" class="top-logo">
+		<div id="sidebar-secondary" class="sidebar-2">
+		      <?php dynamic_sidebar( 'sidebar-2' ); ?>
+	    </div>
+        <a href="<?php echo site_url(); ?>" class="top-logo">
 			<div class="title"></div>
 			<div class="sub-title"><?php bloginfo('description'); ?></div>
-		</a>
-
+        </a>
 		<nav class="top-nav">
 			<?php wp_nav_menu(array('theme_location' => 'primary-menu')); ?>
 		</nav>
 	</header>
-	<div id="sidebar-secondary" class="sidebar-2">
-		<?php dynamic_sidebar( 'sidebar-2' ); ?>
-	</div>
 
 	<div id="page" class="hfeed site">
 		<div id="main" class="site-main">
