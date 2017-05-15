@@ -18,6 +18,7 @@
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,700,400' rel='stylesheet' type='text/css'>
 	<link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lobster|Roboto:300,300i,400,400i,700,700i" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo('stylesheet_url'); ?>" />
 	<?php wp_head(); ?>
 </head>
@@ -26,7 +27,7 @@
 	<header class="page-header container">
 		<div id="sidebar-secondary" class="sidebar-2">
 		      <?php dynamic_sidebar( 'sidebar-2' ); ?>
-	    </div>
+	  </div>
         <a href="<?php echo site_url(); ?>" class="top-logo">
 			<div class="title"></div>
 			<div class="sub-title"><?php bloginfo('description'); ?></div>

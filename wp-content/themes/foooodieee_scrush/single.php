@@ -9,15 +9,17 @@
 
 get_header(); ?>
 
-<section class="single-page">		
+<section class="single-page">
 	<div class="main-content">
 		<?php while ( have_posts() ) : the_post(); ?>
 			<?php get_template_part('content', get_post_format()); ?>
 			<?php comments_template(); ?>
 		<?php endwhile; ?>
 	</div>
-	
-	<?php get_sidebar(); ?>
+
+	<div id="sidebar-post" class="primary-sidebar widget-area" role="complementary">
+		<?php dynamic_sidebar( 'sidebar-1' ); ?>
+	</div>
 
 	<div id="navigation" class="container">
 		<div class="left"><a href="<?php echo site_url('/blog/') ?>">&larr; <span>Back to posts</span></a></div>

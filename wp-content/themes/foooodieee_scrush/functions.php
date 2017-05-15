@@ -61,6 +61,15 @@ function skillcrushstarter_widgets_init() {
 		'before_title'  => '<h3 class="widget-title">',
 		'after_title'   => '</h3>',
 	) );
+	register_sidebar( array(
+		'name'          => __( 'Sidebar 3', 'skillcrushstarter' ),
+		'id'            => 'sidebar-3',
+		'description'   => __( 'Add widgets here to appear in your sidebar.', 'skillcrushstarter' ),
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	) );
 }
 add_action( 'widgets_init', 'skillcrushstarter_widgets_init' );
 
@@ -84,3 +93,14 @@ function custom_excerpt_more($more) {
 	return '...';
 }
 add_filter('excerpt_more', 'custom_excerpt_more');
+
+/**
+ * Filter the except length to 20 words.
+ *
+ * @param int $length Excerpt length.
+ * @return int (Maybe) modified excerpt length.
+ */
+function wpdocs_custom_excerpt_length( $length ) {
+    return 20;
+}
+add_filter( 'excerpt_length', 'wpdocs_custom_excerpt_length', 999 );

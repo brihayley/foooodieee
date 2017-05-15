@@ -19,7 +19,9 @@ get_header(); ?>
 		<?php endwhile; ?>
 	</div>
 
-	<?php get_sidebar(); ?>
+	<div id="sidebar-blog" class="primary-sidebar widget-area" role="complementary">
+		<?php dynamic_sidebar( 'sidebar-1' ); ?>
+	</div>
 </section>
 
 <?php get_footer(); ?>

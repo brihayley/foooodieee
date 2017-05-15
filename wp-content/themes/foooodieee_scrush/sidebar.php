@@ -19,4 +19,9 @@
 		<?php dynamic_sidebar( 'sidebar-1' ); ?>
 	</div><!-- #primary-sidebar -->
 	<?php endif; ?>
+<!-- 
+	<?php if ( is_active_sidebar( 'sidebar-3' ) ) : ?>
+	<div id="front-page-sidebar" class="third-sidebar widget-area">
+		<?php dynamic_sidebar( 'sidebar-3' ); ?>
+	</div>	 -->
 </div><!-- #secondary -->

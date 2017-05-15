@@ -25,7 +25,9 @@ get_header(); ?>
 		<?php endif; ?>
 	</div>
 
-	<?php get_sidebar(); ?>
+	<div id="sidebar" class="primary-sidebar widget-area" role="complementary">
+		<?php dynamic_sidebar( 'sidebar-1' ); ?>
+	</div>
 	<?php if ( have_posts() ): ?>
 		<div id="navigation" class="container">
         <div class="left">
